@@ -6,7 +6,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 
 # Specify the input file path
-input_file = 's3://myemrbucket13/inputfolder/product_data.csv'
+input_file = 's3://myemr2023/product_data.csv'
 
 # Read CSV into a DataFrame
 df = spark.read.option("header", "true").csv(input_file)
